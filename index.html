@@ -7,7 +7,7 @@
 
   <meta charset="UTF-8">
   
-  <title>Words</title>
+  <title>Words 1.2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
   
@@ -144,11 +144,13 @@ $(() => {
   };
   var floatword = (word, main) => {
     var aeuygjdsfbdjshfgfjshf = div("float-word", document.body).text(word);
+	  var pad = 250;
+	  var pad2 = 100;
     anime.set(aeuygjdsfbdjshfgfjshf[0], {
       translateX: "-50%",
       translateY: "-50%",
-      top: anime.random(0, window.innerHeight),
-      left: anime.random(0, window.innerWidth) });
+      top: anime.random(pad2, window.innerHeight-pad2*2),
+      left: anime.random(pad, window.innerWidth-pad*2) });
 
     anime({
       targets: aeuygjdsfbdjshfgfjshf[0],
